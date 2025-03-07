@@ -3,33 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131-dynamic web fundamental-Bockarie Junior Mansaray | Home</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
-    <div id="content">
-        <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="image/magnificent (2).jpg" alt="WDD131">
-            </a>
-            <nav>
-                <a href="index.html">Linkedin</a>
-                <a href="index.html">canvas</a>
-                <a href="site-plan-rafting.html">scripture</a>
-                <a href="contactus.html">final project</a>
-            </nav>
-        </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Bockarie Junior Mansaray</h1>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Canvas</a></li>
+                <li><a href="#">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="About-me">
+            <h2>About Me</h2>
+            <div class="content">
+                <p>My name is Bockarie Junior Mansaray. I was born in freetown, Sierra Leone and currently live in
+                    freetown, wilberfoce.. I am working as a fincal officer. I love spending time some time reading
+                    books or doing someth better., traveling, and learning new things.</p>
+                <img src="image/magnificent (2).jpg" alt=" Photo">
             </div>
-      </div>
-        <footer>
-            <p>WDD131 &copy; 2025 - Bockarie junio mansaray</p>
+        </section>
+
+        <section class="location">
+            <h2>Sierra Leone</h2>
+            <div class="content">
+                <img src="image/sierra-leone-national-flag.jpg" alt="Country Flag">
+                <p> My country is a beautiful place, with natural caulture and so many things, we are known for our
+                    beautiful beaches, blood dimond and so many things, which I can't state now.</p>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <aside class="resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </aside>
+    </main>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
+<footer>
+    <p>&copy; <span id="year">2025</span> Bockarie Junior Mansaray</p>
+</footer>
+
+</html>
