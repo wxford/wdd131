@@ -48,6 +48,19 @@ header {
     height: auto;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     text-align: center;
     background: #222;
