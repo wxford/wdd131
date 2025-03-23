@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Sierra Leone </title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <!-- Hero image with srcset for responsive design -->
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <source srcset="images/01sierraleone.jpg" media="(min-width: 601px)">
+            <img src="images/sierraleone.jpg" alt="Beautiful view of Sierra Leone">
+        </picture>
+        <h1>sierra Leone</h1>
+    </header>
+
+    <main>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="weather-icon">
+                <!-- SVG for mobile view -->
+                <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-icon">
+                <!-- Emoticon for wider view -->
+                <span class="wide-icon">⛅</span>
+            </div>
+            <p>Temperature: <span id="temp">10</span>°C</p>
+            <p>Wind Speed: <span id="wind-speed">5</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

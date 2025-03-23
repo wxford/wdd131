@@ -1,0 +1,62 @@
+/* Global Variables */
+:root {
+    --primary-color: #1e90ff;
+    /* Example: Blue */
+    --secondary-color: #ff4500;
+    /* Example: Orange */
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Basic Reset */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    width: 70%;
+    height: auto;
+}
+
+#weather {
+    padding: 20px;
+    text-align: center;
+}
+
+#weather-icon .mobile-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#weather-icon .wide-icon {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Media Queries for Wider View */
+@media (min-width: 601px) {
+    #weather-icon .mobile-icon {
+        display: none;
+    }
+
+    #weather-icon .wide-icon {
+        display: inline;
+        font-size: 2rem;
+    }
+}
