@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Save The Children - Protecting children's rights worldwide">
+    <title>Save The Children | Home</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Save The Children Logo" width="150" height="80">
+            </a>
+            <nav>
+                <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul id="primary-navigation" data-visible="false">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Protecting Children's Rights Worldwide</h1>
+                <p>Every child deserves a future. Join us to make a difference.</p>
+                <a href="#donate" class="btn">Donate Now</a>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <h2>Our Impact in 2023</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="children-helped">0</span>
+                        <span class="stat-label">Children Helped</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="countries">0</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="projects">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="causes" id="donate">
+            <div class="container">
+                <h2>Our Causes</h2>
+                <div class="causes-grid">
+                    <article class="cause-card">
+                        <img src="images/in school.jpg" alt="Child in school" loading="lazy">
+                        <h3>Education</h3>
+                        <p>Ensuring access to quality education for all children.</p>
+                        <button class="btn cause-btn" data-cause="education">Learn More</button>
+                    </article>
+                    <article class="cause-card">
+                        <img src="images/healthcear.jpg" alt="Child receiving healthcare" loading="lazy">
+                        <h3>Healthcare</h3>
+                        <p>Providing life-saving medical care to children in need.</p>
+                        <button class="btn cause-btn" data-cause="healthcare">Learn More</button>
+                    </article>
+                    <article class="cause-card">
+                        <img src="images/nutritention.jpg" alt="Child with food" loading="lazy">
+                        <h3>Nutrition</h3>
+                        <p>Fighting malnutrition and hunger among children.</p>
+                        <button class="btn cause-btn" data-cause="nutrition">Learn More</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <form id="newsletter-form" class="newsletter-form">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="images/logo.jpg" alt="Save The Children Logo" width="120" height="60">
+                    <p>Protecting children's rights since 1919</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <address>
+                        Wilberfoce<br>
+                        off hill cut road<br>
+                        <a href="tel:+23273281430">(+232) 281-430</a>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Save The Children. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+</body>
+
+</html>
